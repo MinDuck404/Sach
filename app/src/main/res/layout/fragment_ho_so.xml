@@ -55,7 +55,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:contentDescription="User Image"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logonhasach" />
 
     </LinearLayout>
 
