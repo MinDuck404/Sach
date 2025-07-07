@@ -132,10 +132,10 @@ public class HoSoFragment extends Fragment {
         Button btnUnderstand = dialogView.findViewById(R.id.dialogButtonUnderstand);
 
         // Thiết lập nội dung
-        title.setText("Ứng dụng đồng hồ");
-        introduction.setText("AppWatch là ứng dụng cung cấp giải pháp mua sắm và quản lý đồng hồ chất lượng, giúp người dùng dễ dàng tìm kiếm sản phẩm phù hợp và nâng tầm phong cách.");
-        ownerInfo.setText("Chủ sở hữu: Công ty TNHH AppWatch Việt Nam");
-        supportEmail.setText("Email hỗ trợ: support@appwatch.vn");
+        title.setText("Ứng dụng thư viện");
+        introduction.setText("Sách ở đây nhập lậu nên bán rẻ hơn nhé, tặng kèm một súng chích điện");
+        ownerInfo.setText("Chủ sở hữu: Công ty TNHH Dòng Điện");
+        supportEmail.setText("Email hỗ trợ: anhemcampuchia@gmail.com");
 
         // Xử lý khi nhấn nút "Đã hiểu"
         btnUnderstand.setOnClickListener(v -> dialog.dismiss());
