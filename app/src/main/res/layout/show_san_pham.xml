@@ -156,7 +156,7 @@
                     android:id="@+id/cookingTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Từ 7 đến 10 ngày"
+                    android:text="Từ 2 đến 5 ngày"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
             </LinearLayout>
