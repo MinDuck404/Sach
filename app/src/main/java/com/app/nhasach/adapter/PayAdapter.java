@@ -47,10 +47,10 @@ public class PayAdapter extends RecyclerView.Adapter<PayAdapter.PayViewHolder> {
         ThanhToan thanhToan = thanhToanList.get(position);
 
         // Gắn dữ liệu vào các view
-        holder.tvTenNguoi.setText("Tên người: " + thanhToan.getTenNguoi());
+        holder.tvTenNguoi.setText("Tên người đặt: " + thanhToan.getTenNguoi());
         holder.tvSdt.setText("Số điện thoại: " + thanhToan.getSdt());
         holder.tvDiaChi.setText("Địa chỉ: " + thanhToan.getDiaChi());
-        holder.tvSP.setText("Đồ ăn: " + thanhToan.getTenSP());
+        holder.tvSP.setText("Tên sách: " + thanhToan.getTenSP());
         holder.tvSL.setText("SL: " + thanhToan.getSoLuong());
         holder.tvTongTien.setText(String.format("Tổng tiền: %,d VND", (long) thanhToan.getTongTien()));
 

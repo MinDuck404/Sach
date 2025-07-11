@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:text="Tên người"
+                    android:text="Tên người đặt"
                     android:textSize="18sp" />
 
                 <TextView
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:text="Đồ ăn"
+                    android:text="Tên sách"
                     android:textSize="18sp" />
 
                 <TextView
