@@ -44,42 +44,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/baseline_chevron_right_24"
-        android:text="Chính sách bảo mật"
+        android:text="Chính sách bảo mật thông tin"
         android:textColor="@color/black"
         android:background="@color/white"
         android:layout_marginTop="4dp"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button_quy_che"
+        android:id="@+id/button_chinh_sach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:drawableEnd="@drawable/baseline_chevron_right_24"
-        android:text="Quy chế"
+        android:text="Chính sách đổi/trả sách"
         android:textColor="@color/black"
         android:background="@color/white"
         android:layout_marginTop="4dp"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button_dieu_khoan_su_dung"
+        android:id="@+id/button_thanh_toan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/baseline_chevron_right_24"
-        android:text="Điều khoán sử dụng"
+        android:text="Điều khoản thanh toán và vận chuyển"
         android:textColor="@color/black"
         android:background="@color/white"
         android:layout_marginTop="4dp"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button_chinh_sach_giai_quyet_tranh_chap"
+        android:id="@+id/button_khieu_nai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:drawableEnd="@drawable/baseline_chevron_right_24"
-        android:text="Chính sách giải quyết tranh chấp"
+        android:text="Chính sách giải quyết khiếu nại và hoàn tiền"
         android:textColor="@color/black"
         android:background="@color/white"
         android:layout_marginTop="4dp"

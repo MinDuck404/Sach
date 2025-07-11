@@ -24,47 +24,44 @@ public class ChinhSachActivity extends AppCompatActivity {
                 finish();
             }
         });
-        // Chính sách bảo mật
+
         Button btnBaoMat = findViewById(R.id.button_chinh_sach_bao_mat);
         btnBaoMat.setOnClickListener(v -> openDetailActivity(
-                "Chính sách bảo mật",
-                "Đây là nội dung của chính sách bảo mật. Mọi thông tin cá nhân sẽ được bảo vệ nghiêm ngặt. " +
-                        "Chúng tôi cam kết không chia sẻ hoặc bán thông tin cá nhân của bạn cho bất kỳ bên thứ ba nào nếu không có sự đồng ý rõ ràng từ bạn. " +
-                        "Dữ liệu của bạn sẽ được mã hóa và lưu trữ trong hệ thống bảo mật cao, đảm bảo tránh khỏi nguy cơ bị truy cập trái phép. " +
-                        "Ngoài ra, chúng tôi luôn tuân thủ các quy định của pháp luật liên quan đến quyền riêng tư và bảo vệ dữ liệu cá nhân.",
+                "Chính sách bảo mật thông tin",
+                "Chúng tôi cam kết bảo vệ thông tin cá nhân của người dùng khi mua sách trên ứng dụng. " +
+                        "Dữ liệu như tên, địa chỉ, số điện thoại và lịch sử mua hàng sẽ được lưu trữ an toàn và không chia sẻ cho bên thứ ba nếu không có sự đồng ý của bạn. " +
+                        "Mọi giao dịch sẽ được mã hóa để đảm bảo an toàn thông tin. " +
+                        "Chúng tôi tuân thủ đầy đủ các quy định về bảo vệ dữ liệu cá nhân theo pháp luật Việt Nam.",
                 "06-12-2024"
         ));
 
-        // Quy chế
-        Button btnQuyChe = findViewById(R.id.button_quy_che);
+        Button btnQuyChe = findViewById(R.id.button_chinh_sach);
         btnQuyChe.setOnClickListener(v -> openDetailActivity(
-                "Quy chế",
-                "Đây là nội dung quy chế. Vui lòng tuân thủ các quy định được đưa ra. " +
-                        "Người dùng cần đảm bảo cung cấp thông tin chính xác khi sử dụng dịch vụ và không thực hiện các hành vi gây ảnh hưởng tiêu cực đến hệ thống. " +
-                        "Chúng tôi có quyền đình chỉ hoặc chấm dứt tài khoản nếu phát hiện hành vi vi phạm nghiêm trọng. " +
-                        "Ngoài ra, mọi hoạt động liên quan đến dịch vụ đều phải tuân thủ các quy định của pháp luật hiện hành.",
+                "Chính sách đổi/trả sách",
+                "Khách hàng có thể đổi hoặc trả sách trong vòng 7 ngày kể từ khi nhận hàng nếu sản phẩm bị lỗi, rách, thiếu trang hoặc sai với mô tả. " +
+                        "Sách cần được giữ nguyên tình trạng ban đầu, không có dấu hiệu đã qua sử dụng. " +
+                        "Chúng tôi không hỗ trợ đổi/trả với lý do chủ quan như không thích nội dung. " +
+                        "Mọi yêu cầu đổi/trả vui lòng liên hệ bộ phận hỗ trợ qua mục Liên hệ.",
                 "06-12-2024"
         ));
 
-        // Điều khoản sử dụng
-        Button btnDieuKhoan = findViewById(R.id.button_dieu_khoan_su_dung);
+        Button btnDieuKhoan = findViewById(R.id.button_thanh_toan);
         btnDieuKhoan.setOnClickListener(v -> openDetailActivity(
-                "Điều khoản sử dụng",
-                "Đây là nội dung điều khoản sử dụng. Việc sử dụng ứng dụng đồng nghĩa với việc chấp nhận điều khoản này. " +
-                        "Bạn chịu trách nhiệm về thông tin mình cung cấp và việc sử dụng dịch vụ. " +
-                        "Mọi hành động sử dụng dịch vụ với mục đích gian lận, phá hoại, hoặc vi phạm pháp luật đều bị nghiêm cấm. " +
-                        "Chúng tôi cam kết cung cấp dịch vụ ổn định, nhưng không chịu trách nhiệm cho các gián đoạn bất khả kháng như thiên tai hoặc sự cố kỹ thuật nghiêm trọng.",
+                "Điều khoản thanh toán & vận chuyển",
+                "Ứng dụng hỗ trợ thanh toán qua tiền mặt khi nhận hàng (COD), chuyển khoản và ví điện tử. " +
+                        "Sau khi xác nhận đơn hàng, chúng tôi sẽ xử lý và giao hàng trong 2–5 ngày làm việc. " +
+                        "Trong trường hợp địa chỉ không rõ ràng hoặc không liên hệ được, đơn hàng có thể bị hủy. " +
+                        "Người dùng cần cung cấp thông tin chính xác để đảm bảo giao hàng đúng tiến độ.",
                 "06-12-2024"
         ));
 
-        // Chính sách giải quyết tranh chấp
-        Button btnTranhChap = findViewById(R.id.button_chinh_sach_giai_quyet_tranh_chap);
+        Button btnTranhChap = findViewById(R.id.button_khieu_nai);
         btnTranhChap.setOnClickListener(v -> openDetailActivity(
-                "Chính sách giải quyết tranh chấp",
-                "Đây là nội dung chính sách giải quyết tranh chấp. Chúng tôi cam kết giải quyết tranh chấp nhanh chóng và công bằng. " +
-                        "Mọi tranh chấp phát sinh từ việc sử dụng dịch vụ sẽ được giải quyết trên tinh thần hợp tác và tôn trọng lẫn nhau. " +
-                        "Nếu tranh chấp không thể giải quyết qua thương lượng, hai bên có thể nhờ đến sự can thiệp của cơ quan pháp lý có thẩm quyền. " +
-                        "Trong mọi trường hợp, chúng tôi ưu tiên bảo vệ quyền lợi hợp pháp của người dùng.",
+                "Chính sách giải quyết khiếu nại & hoàn tiền",
+                "Chúng tôi sẵn sàng tiếp nhận và giải quyết khiếu nại liên quan đến đơn hàng, sản phẩm hoặc trải nghiệm mua sắm. " +
+                        "Người dùng có thể gửi phản hồi qua mục Hỗ trợ khách hàng. " +
+                        "Trong trường hợp hoàn tiền, thời gian xử lý là 3–7 ngày làm việc tùy theo hình thức thanh toán. " +
+                        "Mọi tranh chấp sẽ được giải quyết minh bạch, dựa trên quy định hiện hành và quyền lợi người dùng.",
                 "06-12-2024"
         ));
     }

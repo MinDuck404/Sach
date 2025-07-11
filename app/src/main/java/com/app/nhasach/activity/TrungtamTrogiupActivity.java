@@ -32,14 +32,14 @@ public class TrungtamTrogiupActivity extends AppCompatActivity {
         faqList = new ArrayList<>();
         // Dữ liệu mẫu với chủ đề rõ ràng
         faqList = new ArrayList<>();
-        faqList.add(new FAQ("Làm thế nào để bảo quản đồng hồ đúng cách?", "Bảo quản"));
-        faqList.add(new FAQ("Tôi muốn đổi hoặc trả sản phẩm, cần làm gì?", "Chính sách"));
-        faqList.add(new FAQ("Hướng dẫn sử dụng chức năng bấm giờ trên đồng hồ thể thao", "Hướng dẫn"));
-        faqList.add(new FAQ("Vì sao đồng hồ của tôi chạy chậm hoặc nhanh hơn bình thường?", "Bảo trì"));
-        faqList.add(new FAQ("Chế độ bảo hành của AppWatch là gì?", "Chính sách"));
-        faqList.add(new FAQ("Hướng dẫn mua hàng trên ứng dụng AppWatch", "Hướng dẫn"));
-        faqList.add(new FAQ("Phương thức thanh toán nào được chấp nhận?", "Thanh toán"));
-        faqList.add(new FAQ("Làm thế nào để kiểm tra đồng hồ chính hãng?", "Bảo quản"));
+        faqList.add(new FAQ("Làm thế nào để bảo quản sách đúng cách?", "Bảo quản"));
+        faqList.add(new FAQ("Tôi muốn đổi hoặc trả sách, cần làm gì?", "Chính sách"));
+        faqList.add(new FAQ("Hướng dẫn tìm kiếm và đặt mua sách trên ứng dụng", "Hướng dẫn"));
+        faqList.add(new FAQ("Vì sao sách tôi nhận được bị lỗi hoặc thiếu trang?", "Bảo trì"));
+        faqList.add(new FAQ("Chế độ đổi/trả và bảo hành sách của ứng dụng là gì?", "Chính sách"));
+        faqList.add(new FAQ("Hướng dẫn mua sách qua ứng dụng", "Hướng dẫn"));
+        faqList.add(new FAQ("Các phương thức thanh toán được chấp nhận là gì?", "Thanh toán"));
+        faqList.add(new FAQ("Làm thế nào để kiểm tra tình trạng đơn hàng của tôi?", "Hướng dẫn"));
 
         // Gán adapter cho RecyclerView
         faqAdapter = new FAQAdapter(this, faqList);

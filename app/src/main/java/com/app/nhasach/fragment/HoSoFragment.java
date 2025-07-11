@@ -79,8 +79,8 @@ public class HoSoFragment extends Fragment {
             public void onClick(View view) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "App Đồng Hồ");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Tải ứng dụng Đồng  tại: https://example.com");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "App Bán sách");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Tải ứng dụng tại: https://example.com");
                 startActivity(Intent.createChooser(shareIntent, "Chia sẻ ứng dụng qua:"));
             }
         });
@@ -106,7 +106,7 @@ public class HoSoFragment extends Fragment {
         });
 
         button_facebook.setOnClickListener(view -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/profile.php?id=61570625647674"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/jack.phuongtuan1204"));
             startActivity(browserIntent);
         });
 
