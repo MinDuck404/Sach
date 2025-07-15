@@ -102,7 +102,7 @@ public class ThanhToanDao {
         ContentValues values = new ContentValues();
 
         // Chuyển trạng thái chuỗi thành giá trị số tương ứng
-        int trangThaiInt = 0; // Mặc định là 0 (Đang giao)
+        int trangThaiInt = 0;
         if ("Đang giao".equals(trangThai)) {
             trangThaiInt = 1;
         } else if ("Đã giao".equals(trangThai)) {

@@ -27,13 +27,13 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewPizza"
+                android:id="@+id/recyclerViewVanHocVN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"/>
 
             <ProgressBar
-                android:id="@+id/progressBarPizza"
+                android:id="@+id/progressBarVanHocVN"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,13 +58,13 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewGa"
+                android:id="@+id/recyclerViewVanHocNN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"/>
 
             <ProgressBar
-                android:id="@+id/progressBarGa"
+                android:id="@+id/progressBarVanHocNN"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,13 +90,13 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewHamburger"
+                android:id="@+id/recyclerViewTieuThuyet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"/>
 
             <ProgressBar
-                android:id="@+id/progressBarHamburger"
+                android:id="@+id/progressBarTieuThuyet"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

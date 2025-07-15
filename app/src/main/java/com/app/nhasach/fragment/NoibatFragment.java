@@ -24,8 +24,8 @@ import java.util.List;
 public class NoibatFragment extends Fragment {
 
     private View mView;
-    private RecyclerView recyclerViewPizza, recyclerViewGa, recyclerViewHamburger;
-    private ProgressBar progressBarPizza, progressBarGa, progressBarHamburger;
+    private RecyclerView recyclerViewVanHocVN, getRecyclerViewVanHocNN, recyclerViewTieuThuyet;
+    private ProgressBar progressBarVanHocVN, progressBarVanHocNN, progressBarTieuThuyet;
     private ProductNoiBatAdapter pizzaAdapter, gaAdapter, hamburgerAdapter;
     private List<SanPham> pizzaList, gaList, hamburgerList;
     private sanPhamDao sanPhamDao;
@@ -40,12 +40,12 @@ public class NoibatFragment extends Fragment {
         sanPhamDao = new sanPhamDao(getContext());
 
         // Khởi tạo RecyclerView và ProgressBar
-        recyclerViewPizza = mView.findViewById(R.id.recyclerViewPizza);
-        recyclerViewGa = mView.findViewById(R.id.recyclerViewGa);
-        recyclerViewHamburger = mView.findViewById(R.id.recyclerViewHamburger);
-        progressBarPizza = mView.findViewById(R.id.progressBarPizza);
-        progressBarGa = mView.findViewById(R.id.progressBarGa);
-        progressBarHamburger = mView.findViewById(R.id.progressBarHamburger);
+        recyclerViewVanHocVN = mView.findViewById(R.id.recyclerViewVanHocVN);
+        getRecyclerViewVanHocNN = mView.findViewById(R.id.recyclerViewVanHocNN);
+        recyclerViewTieuThuyet = mView.findViewById(R.id.recyclerViewTieuThuyet);
+        progressBarVanHocVN = mView.findViewById(R.id.progressBarVanHocVN);
+        progressBarVanHocNN = mView.findViewById(R.id.progressBarVanHocNN);
+        progressBarTieuThuyet = mView.findViewById(R.id.progressBarTieuThuyet);
 
         // Khởi tạo danh sách sản phẩm
         pizzaList = new ArrayList<>();
@@ -53,9 +53,9 @@ public class NoibatFragment extends Fragment {
         hamburgerList = new ArrayList<>();
 
         // Thiết lập LayoutManager cho RecyclerView
-        recyclerViewPizza.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        recyclerViewGa.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        recyclerViewHamburger.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewVanHocVN.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        getRecyclerViewVanHocNN.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewTieuThuyet.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         // Tải dữ liệu sản phẩm
         loadProductData();
@@ -68,9 +68,9 @@ public class NoibatFragment extends Fragment {
 
     private void loadProductData() {
         // Hiển thị ProgressBar khi bắt đầu tải
-        progressBarPizza.setVisibility(View.VISIBLE);
-        progressBarGa.setVisibility(View.VISIBLE);
-        progressBarHamburger.setVisibility(View.VISIBLE);
+        progressBarVanHocVN.setVisibility(View.VISIBLE);
+        progressBarVanHocNN.setVisibility(View.VISIBLE);
+        progressBarTieuThuyet.setVisibility(View.VISIBLE);
 
         // Tạo thread giả lập thời gian tải
         new Thread(() -> {
@@ -79,9 +79,9 @@ public class NoibatFragment extends Fragment {
                 Thread.sleep(1000);
 
                 // Lấy sản phẩm theo mã loại từ sanPhamDao
-                List<SanPham> pizzaData = sanPhamDao.getSanPhamListByLoai(1);  // Loại Pizza
-                List<SanPham> gaData = sanPhamDao.getSanPhamListByLoai(2);     // Loại Gà
-                List<SanPham> hamburgerData = sanPhamDao.getSanPhamListByLoai(3); // Loại Hamburger
+                List<SanPham> pizzaData = sanPhamDao.getSanPhamListByLoai(1);
+                List<SanPham> gaData = sanPhamDao.getSanPhamListByLoai(2);
+                List<SanPham> hamburgerData = sanPhamDao.getSanPhamListByLoai(3); //
 
                 // Cập nhật danh sách sản phẩm và ẩn ProgressBar
                 getActivity().runOnUiThread(() -> {
@@ -94,9 +94,9 @@ public class NoibatFragment extends Fragment {
                     hamburgerAdapter.notifyDataSetChanged();
 
                     // Tắt ProgressBar và đặt dataLoaded thành true
-                    progressBarPizza.setVisibility(View.GONE);
-                    progressBarGa.setVisibility(View.GONE);
-                    progressBarHamburger.setVisibility(View.GONE);
+                    progressBarVanHocVN.setVisibility(View.GONE);
+                    progressBarVanHocNN.setVisibility(View.GONE);
+                    progressBarTieuThuyet.setVisibility(View.GONE);
 
                     dataLoaded = true; // Đánh dấu là đã tải xong dữ liệu
                 });
@@ -126,9 +126,9 @@ public class NoibatFragment extends Fragment {
             }
         });
 
-        recyclerViewPizza.setAdapter(pizzaAdapter);
-        recyclerViewGa.setAdapter(gaAdapter);
-        recyclerViewHamburger.setAdapter(hamburgerAdapter);
+        recyclerViewVanHocVN.setAdapter(pizzaAdapter);
+        getRecyclerViewVanHocNN.setAdapter(gaAdapter);
+        recyclerViewTieuThuyet.setAdapter(hamburgerAdapter);
     }
 
     private void openProductDetail(SanPham sanPham) {
